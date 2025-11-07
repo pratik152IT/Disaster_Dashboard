@@ -1,0 +1,9 @@
+G:\Java\DisasterDashboard\src\api\EONETAPI.java
+G:\Java\DisasterDashboard\src\api\USGSEarthquakeAPI.java
+G:\Java\DisasterDashboard\src\api\WeatherAPI.java
+G:\Java\DisasterDashboard\src\database\DatabaseManager.java
+G:\Java\DisasterDashboard\src\database\UserDAO.java
+G:\Java\DisasterDashboard\src\main\DisasterDashboardApp.java
+G:\Java\DisasterDashboard\src\model\Disaster.java
+G:\Java\DisasterDashboard\src\model\User.java
+G:\Java\DisasterDashboard\src\service\DisasterService.java

@@ -1,0 +1,13 @@
+# Ignore compiled Java classes
+bin/
+*.class
+
+# Ignore local database
+disaster_dashboard.db
+*.db
+
+# Ignore IDE / system files
+*.log
+*.tmp
+.idea/
+.vscode/
