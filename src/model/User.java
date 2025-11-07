@@ -5,30 +5,41 @@ public class User {
     private String name;
     private String email;
     private String location;
+    private String role; // 👑 NEW FIELD
 
-    // Constructors
-    public User(int id, String name, String email, String location) {
+    // ✅ Full constructor (used when reading from DB)
+    public User(int id, String name, String email, String location, String role) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.location = location;
+        this.role = role;
     }
 
-    public User(String name, String email, String location) {
+    // ✅ Constructor for new users
+    public User(String name, String email, String location, String role) {
         this.name = name;
         this.email = email;
         this.location = location;
+        this.role = role;
     }
 
-    // Getters
+    // ⚙️ Compatibility constructor (still supports old calls)
+    public User(int id, String name, String email, String location) {
+        this(id, name, email, location, "user");
+    }
+
     public int getId() { return id; }
     public String getName() { return name; }
     public String getEmail() { return email; }
     public String getLocation() { return location; }
+    public String getRole() { return role; }
 
-    // To string
+    public void setRole(String role) { this.role = role; }
+
     @Override
     public String toString() {
-        return "User [id=" + id + ", name=" + name + ", email=" + email + ", location=" + location + "]";
+        return String.format("User [id=%d, name=%s, email=%s, location=%s, role=%s]",
+                id, name, email, location, role);
     }
 }
